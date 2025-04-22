@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эстетика Бедности | RAW‑Landing</title>
+  <style>
+    :root{
+      --bg:#0c0c0c;--txt:#e6e6e6;--accent:#9c6bff;
+      --noise:url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      --font:'Unbounded',sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
+
+    *{margin:0;box-sizing:border-box}
+    body{
+      font-family:var(--font);
+      background:var(--bg)var(--noise) fixed;
+      color:var(--txt);
+      scroll-behavior:smooth;
+      cursor:url('https://cur.cursors-4u.net/heart/hea-4/hea388.cur'),auto;
+    }
+    a{color:var(--accent);text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* HERO */
+    .hero{
+      min-height:120vh;
+      background:url('style_aesthetic_1.png') center/cover fixed;
+      display:flex;flex-direction:column;justify-content:center;align-items:center;
+      text-align:center;
+      padding:4rem 2rem;
+    }
+    .hero h1{font-size:clamp(3rem,8vw,7rem);color:#fff;text-transform:uppercase;letter-spacing:3px;text-shadow:0 0 15px #000}
+    .hero p{margin-top:1rem;font-size:1.3rem;color:#cfcfcf}
+
+    /* GENERIC SECTIONS */
+    section{padding:6rem 7vw;border-top:1px solid #222}
+    .title{font-size:clamp(2rem,4vw,3rem);text-align:center;margin-bottom:2.5rem;color:#fff;display:flex;gap:1rem;justify-content:center;align-items:center}
+    .title::before,.title::after{content:'🪽';font-size:1.8rem}
+    .text{max-width:900px;margin:0 auto 2rem auto;font-size:1.1rem;line-height:1.7;color:#dcdcdc}
+
+    /* GRID */
+    .grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:rgba(0,0,0,.55);padding:2rem;border:1px solid #333;backdrop-filter:blur(6px);transition:.4s}
+    .card:hover{transform:translateY(-6px)}
+
+    .marquee{white-space:nowrap;overflow:hidden;background:#000;border-block:1px solid #333}
+    .marquee span{display:inline-block;padding:1rem 2rem;font-size:1.1rem;color:#999;animation:mar 28s linear infinite}
+    @keyframes mar{to{transform:translateX(-100%)}}
+
+    footer{text-align:center;padding:3rem 1rem;background:#000;font-size:.9rem;color:#777;border-top:2px solid #111}
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Мы включаем свет там, где Maps кричит — no signal</h1>
+    <p>Бренд пришёл не панчиковать, а раскачать бетон</p>
+  </header>
+
+  <div class="marquee"><span>RAW VIBES · STREET POWER · ЭСТЕТИКА БЕДНОСТИ · ДЕДИНСАЙД · ГРОМКО · </span></div>
+
+  <!-- MANIFEST -->
+  <section>
+    <h2 class="title">Манифест</h2>
+    <p class="text">Мы — контент‑сталкеры. Лезем туда, где вай‑фай ловится, если притянуть антенну к потолку и подуть на симку. Инфлюенсер для нас — девчонка в поношенном худи, ставящая под телефон кирпичи, пока горит последняя свечка. Мы стримим чистый опыт выживания и транслируем его в мир до того, как его пригладят продюсеры.</p>
+  </section>
+
+  <!-- PROBLEM -->
+  <section>
+    <h2 class="title">Боль бренда</h2>
+    <div class="text">
+      <p><strong>«Топ‑тиктокеры — мыльный пузырь»</strong> — им давно платят за «привет», эмоция потухла.</p>
+      <p><strong>«Легалайз? Не, не слышали»</strong> — в саб‑районах договор = рукопожатие + наклейка.</p>
+      <p><strong>«Доставка в трущобы?»</strong> — DHL смеётся, дорога ещё в проекте, мы несём коробку пешком.</p>
+    </div>
+  </section>
+
+  <!-- SOLUTION GRID -->
+  <section>
+    <h2 class="title">Наш хак‑лист</h2>
+    <div class="grid">
+      <div class="card"><h3>Сигнал из воздуха</h3><p>Собираем Starlink, включаем точку за 72 часа.</p></div>
+      <div class="card"><h3>Jur‑Matrix</h3><p>Видео‑согласие + печать старейшин → чистая спина бренда.</p></div>
+      <div class="card"><h3>Crypto‑Bridge</h3><p>USDT → P2P → нал в пальцах. 15 минут — и гонорар в руках.</p></div>
+      <div class="card"><h3>Low‑Tech контент</h3><p>720p, шум, плёнка. Реализм, от которого TikTok визжит.</p></div>
+    </div>
+  </section>
+
+  <!-- WHY WORKS -->
+  <section>
+    <h2 class="title">Почему это работает</h2>
+    <p class="text">Аудитория сыта глянцем. Сырая картинка шипит, дышит, пахнет пылью — алгоритмы пушат по‑живому. Инфлюенсер впервые держит настоящий гонорар, бренду достаётся неподдельная лояльность и бесплатный шторм в медиа.</p>
+  </section>
+
+  <!-- CASES -->
+  <section>
+    <h2 class="title">Кейсы</h2>
+    <div class="grid">
+      <div class="card"><h3>Фавела AirDrop</h3><p>Проектор между балконов, Bluetooth‑промокоды — +19 % продаж.</p></div>
+      <div class="card"><h3>Тундра FM</h3><p>Генератор, эфир, шум в ролике — ROI бесконечность.</p></div>
+      <div class="card"><h3>Dusty Skate Jam</h3><p>Скейт в песке — 11 млн органики за 24 ч.</p></div>
+    </div>
+  </section>
+
+  <!-- SCENARIO -->
+  <section>
+    <h2 class="title">Запуск проекта</h2>
+    <ol class="text">
+      <li>Call → бренду надоело стерильно.</li>
+      <li>Scout → разведка, спутник, 3G‑молитва.</li>
+      <li>Pitch → идея ломает крышу.</li>
+      <li>Boots on Ground → ставим Starlink.</li>
+      <li>Shoot → один дубль или никак.</li>
+      <li>Blast → вирусим ролики.</li>
+      <li>Payday → креатор хлопает кэшем.</li>
+    </ol>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2 class="title">FAQ</h2>
+    <details class="text"><summary>Страшно?</summary><p>Страшно — значит живой.</p></details>
+    <details class="text"><summary>Могут забанить?</summary><p>Дублируем на 10 зеркалах — бан = инфоповод.</p></details>
+    <details class="text"><summary>Бюджет?</summary><p>От $7K до «сколько влезет в рюкзак».</p></details>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2 class="title">Контакт</h2>
+    <p class="text">✉️ <a href="mailto:ads@povertyaesthetic.world">ads@povertyaesthetic.world</a><br>👾 TG: <a href="https://t.me/povertyaesthetic">@povertyaesthetic</a></p>
+  </section>
+
+  <footer>© 2025 Эстетика Бедности — бетон, сигнал, правда.</footer>
+</body>
+</html>
